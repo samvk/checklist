@@ -2,16 +2,16 @@ const path = require('path'),
 	  SRC = path.join(__dirname, 'src/'),
 	  NODE_MODULES = path.join(__dirname, 'node_modules/');
 const config = {
-	entry: "./src",               // entry point
+	entry: './src',               // entry point
 	output: {                     // output folder
-		path: "./dist",           // folder path
-		filename: "app.js"        // file name
+		path: './dist',           // folder path
+		filename: 'app.js'        // file name
 	},
 	module: {
 		loaders: [
 			{
 				test: /\.js$/,
-				loaders: ["babel-loader"]   // babelify
+				loaders: ['babel-loader']   // babelify
 			}
 		]
 	},

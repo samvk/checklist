@@ -15,7 +15,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="theme-color" content="#3DB39E">
 
-	<title>Checklist | Get stuff done</title>
+	<title>Checklist | Get it done</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
@@ -31,10 +31,27 @@
 <body>
 
 
+
+	<div class="app">
+		<div class="checkbox__add" style="display: flex">
+			<input type="checkbox">
+			<p>This is an item.</p>
+			<button>X</button>
+			<button>Edit</button>
+		</div>
+
+		<hr>
+
+		<form class="checkbox__add">
+			<input class="checklist__input" type="text">
+			<button type="submit">Add</button>
+		</form>
+	</div>
 <!--**************************************************-->
 
 	<!-- Javascript -->
 	<script src="dist/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </body>
 
