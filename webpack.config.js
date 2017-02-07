@@ -7,6 +7,10 @@ const config = {
 		path: './dist',           // folder path
 		filename: 'app.js'        // file name
 	},
+	babel: {
+		babelrc: false,
+		presets: ['es2015', 'stage-0']
+	},
 	module: {
 		loaders: [
 			{
