@@ -5,4 +5,7 @@ $("form.checkbox__add").submit(function(e) {
 
 	let item = $("input.checklist__input").val();
 	Checklist.addItem(item);
+
+	//clear form
+	this.reset();
 });

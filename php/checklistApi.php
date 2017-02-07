@@ -2,13 +2,13 @@
 
 require_once 'dbconnection.php';
 
-export class Checklist {
+class Checklist {
 	//Create
 	public static function addItem($item, $tags) {
 		global $db;
 
 		$stmt = $db->prepare(
-		'INSERT INTO checklist (item)
+		'INSERT INTO checklist (`item`)
 		VALUES (?)'
 		);
 		$stmt->execute([$item]);
@@ -20,7 +20,7 @@ export class Checklist {
 
 		$stmt = $db->prepare(
 		'DELETE FROM checklist
-		WHERE itemId = ?'
+		WHERE id = ?'
 		);
 		$stmt->execute([$itemId]);
 
@@ -32,11 +32,11 @@ export class Checklist {
 		$stmt = $db->prepare(
 		'UPDATE checklist
 		SET item = :newItem
-		WHERE itemId = :itemId'
+		WHERE id = :id'
 		);
 		$stmt->execute([
 			':newItem' => $newItem,
-			':itemId' => $itemId
+			':id' => $itemId
 		]);
 
 	}

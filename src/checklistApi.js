@@ -7,7 +7,7 @@ export default class Checklist {
 		@param {String|Array} [tags]
 		@return jqXHR
 	*/
-	static addItem(item, tags) {
+	static addItem(item, tags = []) {
 		if (typeof tags === 'string') { tags = [tags]; }
 		return $.ajax({
 			url: url,
