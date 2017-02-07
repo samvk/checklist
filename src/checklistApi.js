@@ -1,6 +1,6 @@
 let url = 'php/checklist.php';
 
-class Checklist {
+export default class Checklist {
 	/**
 		addItem(item, [tags])
 		@param {String} item text of new checklist item
